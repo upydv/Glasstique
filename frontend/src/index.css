@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Carousal {
+  max-width: 100%; /* Ensures carousel is responsive */
+  max-height: 600px; /* Set the maximum height for the entire carousel */
+  overflow: hidden;
+}
+
+.Carousal .carousel-item img {
+  height: 600px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the images cover the area without distortion */
+}
+.caption-text {
+  color: white; /* White text for visibility */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a subtle shadow to the text */
+  font-weight: bold; /* Make the text bold */
+  font-size: 5.5rem; /* Increase the font size */
+  padding: 10px 20px; /* Optional: Add a bit of padding to the text */
+  display: inline-block; /* Ensure the text doesn't extend to a full-width strip */
+
+}
+.caption-ptext{
+  color: white;
+  font-weight: bold;
+  font-size:xx-large;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.text-sky-blue {
+  color: #8aa9e8; /* Sky blue color */
+}
+.bgprimary{
+  color:#021f2b;
+  background-color: #3c7fd6;
+}
+.ReviewCarousal {
+  max-width: 100%; /* Ensures carousel is responsive */
+  max-height: 400px; /* Set the maximum height for the entire carousel */
+  overflow: hidden;
+}
