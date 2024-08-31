@@ -25,26 +25,60 @@ code {
   color: white; /* White text for visibility */
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a subtle shadow to the text */
   font-weight: bold; /* Make the text bold */
-  font-size: 5.5rem; /* Increase the font size */
+  font-size: 6vw; /* Responsive font size based on viewport width */
   padding: 10px 20px; /* Optional: Add a bit of padding to the text */
   display: inline-block; /* Ensure the text doesn't extend to a full-width strip */
-
+  white-space: nowrap; /* Prevent text from breaking in the middle of words */
+  overflow: hidden; /* Hide overflow to prevent text from going out of bounds */
+  text-overflow: ellipsis; /* Add ellipsis if the text overflows */
 }
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .caption-text {
+    font-size: 8vw; /* Increase the font size for smaller screens */
+  }
+}
+
+/* Adjust font size for very small screens */
+@media (max-width: 480px) {
+  .caption-text {
+    font-size: 10vw; /* Further increase the font size for very small screens */
+    white-space: normal; /* Allow text to wrap on very small screens */
+  }
+}
+
 .caption-ptext{
   color: white;
   font-weight: bold;
   font-size:xx-large;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
-.text-sky-blue {
-  color: #8aa9e8; /* Sky blue color */
-}
-.bgprimary{
+ .bgprimary{
   color:#021f2b;
-  background-color: #3c7fd6;
+  background-color: #135370; 
+} 
+.reviews{
+  background-color: #092953;
 }
-.ReviewCarousal {
-  max-width: 100%; /* Ensures carousel is responsive */
-  max-height: 400px; /* Set the maximum height for the entire carousel */
-  overflow: hidden;
+.commentbox {
+  position: relative;
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.commentbox::before {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Adjust based on your design */
+  left: 20px; /* Adjust based on your design */
+  width: 0;
+  height: 0;
+  border-width: 20px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent; /* Triangle color */
 }

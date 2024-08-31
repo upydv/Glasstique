@@ -2,6 +2,7 @@ import React from 'react'
 import Carousals from '../component/Carousals'
 import Homecard from '../component/Homecard'
 import Review from '../component/Review'
+import Footer from '../component/Footer'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Carousals/>
       <Homecard/>
       <Review/>
+      <Footer/>
     </div>
   )
 }

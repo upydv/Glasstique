@@ -14,7 +14,7 @@ function Carousals() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src='bike.jpeg' alt='no img' />
+                    <img className="d-block w-100" src='swan.jpg' alt='no img' />
                     <Carousel.Caption>
                         <h1 className="caption-text">GLASSTIQUE</h1>
                         <p className='caption-ptext'>Buy with plesure!!</p>
